@@ -11,6 +11,14 @@ position: 721,130
     <<setsprite ShipFace happy>>
     Ship: It's HUGE! #line:ship12
     <<setsprite ShipFace neutral>>
+    //New options
+    Ship: Anything else I can help with?
+    -> No, thanks.
+        Ship: Aw, ok!
+    -> I'm good.
+        Ship: Let me know!
+
+    Ship: Bye!
 <<else>>
     <<setsprite ShipFace happy>>
     Ship: Hey!! #line:ship13

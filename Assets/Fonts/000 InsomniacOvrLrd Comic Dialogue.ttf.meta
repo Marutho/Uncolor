@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1a1c2699cd3c45f42b80cd0b6f3227d7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 000_INSOMNIAC_COMIC_DIALOGUE
+  fontNames:
+  - 000_INSOMNIAC_COMIC_DIALOGUE
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
