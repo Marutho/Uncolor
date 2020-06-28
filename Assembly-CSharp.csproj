@@ -68,6 +68,7 @@
     <Compile Include="Assets\Samples\Yarn Spinner\1.2.6\Space\Scripts\NodeVisitedTracker.cs" />
     <Compile Include="Assets\Samples\Yarn Spinner\1.2.6\Space\Scripts\PlayerCharacter.cs" />
     <Compile Include="Assets\Samples\Yarn Spinner\1.2.6\Space\Scripts\SpriteSwitcher.cs" />
+    <Compile Include="Assets\Scripts\MaruController.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

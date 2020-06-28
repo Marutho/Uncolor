@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 463211625}
   - component: {fileID: 463211626}
   - component: {fileID: 463211627}
+  - component: {fileID: 463211628}
   m_Layer: 0
   m_Name: Sally
   m_TagString: Untagged
@@ -263,8 +264,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463211624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.0299997, y: -3.37, z: -0.58298093}
-  m_LocalScale: {x: 1.338824, y: 1.338824, z: 1.338824}
+  m_LocalPosition: {x: 7.43, y: -1.71, z: -0.58298093}
+  m_LocalScale: {x: 2.9164944, y: 2.9164944, z: 2.9164944}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -334,6 +335,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &463211628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463211624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e952d797735855c4c9f72b9936755706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalPlayer1: {fileID: 21300000, guid: 4411e348edacdd549891c2186420fa91, type: 3}
+  normalPlayer2: {fileID: 21300000, guid: 28a52d1bfdea98147bb3592c1ae34b6a, type: 3}
+  AngryPlayer1: {fileID: 0}
+  actualSprite: {fileID: 0}
 --- !u!1 &483402866
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,6 +881,8 @@ GameObject:
   - component: {fileID: 924307000}
   - component: {fileID: 924307001}
   - component: {fileID: 924307002}
+  - component: {fileID: 924307003}
+  - component: {fileID: 924307004}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -879,8 +898,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924306997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.31, y: -3.37, z: -0.58298093}
-  m_LocalScale: {x: 1.338824, y: 1.338824, z: 1.338824}
+  m_LocalPosition: {x: -4.52, y: -1.84, z: -0.58298093}
+  m_LocalScale: {x: 2.9164944, y: 2.9164944, z: 2.9164944}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -900,7 +919,7 @@ MonoBehaviour:
   minPosition: -5.3
   maxPosition: 21
   moveSpeed: 10
-  interactionRadius: 4
+  interactionRadius: 13
 --- !u!114 &924307000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,6 +1002,41 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 62642c85ce6cbd0449265da5e18cf739, type: 3}
   - name: angry
     sprite: {fileID: 21300000, guid: 6d4d62097448a3c4db3f795e9a1ac23f, type: 3}
+--- !u!95 &924307003
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924306997}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &924307004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924306997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e952d797735855c4c9f72b9936755706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalPlayer1: {fileID: 21300000, guid: 62642c85ce6cbd0449265da5e18cf739, type: 3}
+  normalPlayer2: {fileID: 21300000, guid: 894784e43008d5649b786069eaf075c1, type: 3}
+  AngryPlayer1: {fileID: 21300000, guid: 6d4d62097448a3c4db3f795e9a1ac23f, type: 3}
+  actualSprite: {fileID: 0}
 --- !u!1 &963603348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1407,7 +1461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1926079638
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2038,6 +2092,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 1a1c2699cd3c45f42b80cd0b6f3227d7,
         type: 3}
+    - target: {fileID: 7297708610349136255, guid: 4ec3df5875e7347beb6176b545b8fb39,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 7644669280371853063, guid: 4ec3df5875e7347beb6176b545b8fb39,
         type: 3}
       propertyPath: m_AnchorMin.y
