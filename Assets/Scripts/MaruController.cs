@@ -8,46 +8,49 @@ public class MaruController : MonoBehaviour
     public Sprite normalPlayer2;
     public Sprite AngryPlayer1;
 
-    public Sprite actualSprite;
+    public float speedAnim;
+
+    [SerializeField]
+    private Sprite actualSprite;
 
     private float time;
 
     void Start()
     {
         actualSprite = GetComponent<SpriteRenderer>().sprite;
+        speedAnim = 5.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(actualSprite.name);
+        
+        //Debug.Log("El sprite normal 1: " + normalPlayer1.name);
+       // Debug.Log("El sprite normal 2: " + normalPlayer2.name);
         float dt = Time.deltaTime;
-        GetComponent<SpriteRenderer>().sprite = actualSprite;
+        actualSprite = GetComponent<SpriteRenderer>().sprite;
+
+        Debug.Log("El sprite actual es: " + actualSprite.name);
         if ((int)time % 2 == 0)
         {
             if (actualSprite.name == normalPlayer1.name)
             {
+                Debug.Log("He entrado al sprite 1");
                 actualSprite = normalPlayer2;
+                GetComponent<SpriteRenderer>().sprite = actualSprite;
             }
-            else
-            {
-
-            }
-            
         }
         else if ((int)time % 2 != 0)
         {
             if (actualSprite.name == normalPlayer2.name)
             {
+                Debug.Log("He entrado al sprite 2");
                 actualSprite = normalPlayer1;
-            }
-            else
-            {
-
+                GetComponent<SpriteRenderer>().sprite = actualSprite;
             }
         }
 
-
-        time += dt * 5.0f;
-    }
+        time += dt * speedAnim;
+    }       
 }
+

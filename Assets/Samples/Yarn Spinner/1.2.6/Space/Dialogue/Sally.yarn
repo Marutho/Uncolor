@@ -5,9 +5,9 @@ position: 524,111
 ---
 <<if visited("Sally") is false>>
     Maru: Hey, Kermit. #line:794945
-    Kermit: Oh! Bro. #line:2dc39b
-    Kermit: You snuck up on me. #line:34de2f
     <<setsprite Player angry>>
+    Kermit: Oh! Bro. #line:2dc39b
+    Kermit: You snuck up on me. #line:34de2f    
     Kermit: Don't do that. #line:dcc2bc
 <<else>>
     Maru: Hey. #line:a8e70c
@@ -30,8 +30,11 @@ colorID: 0
 position: 512,430
 ---
 Kermit: Not really.  #line:8c3f98
-Kermit: Same old nebula, doing the same old thing. #line:24c418
-Kermit: Oh, Ship wanted to see you. Go say hi to it. #line:df4eaf
+Kermit: You know? #line:24c418
+Kermit: I have been a whole week without smoking... #line:df4eaf
+Kermit: without smoking marijuana #line:df4eff
+Kermit: LISTEN TO ME, SOMETHING IS SOMETHING!#line:df4eAf
+
 <<set $should_see_ship to true>>
 <<if visited("Ship") is true>>
     Maru: Already done! #line:1fea6c
@@ -44,7 +47,7 @@ tags:
 colorID: 6
 position: 211,417
 ---
-Kermit: Bye. #line:60c282
+Kermit: "Two mimir", i'm going too. #line:60c282
 <<setsprite Player normal>>
 ===
 
